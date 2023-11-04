@@ -7,7 +7,7 @@ export const User = ({ user }) => {
   return (
     <div className="column is-one-third">
       <div className="card">
-        <Link to={`/user/${slug}`} className="is-size-5 has-text-primary">
+        <Link to={`/${slug}`} className="is-size-5 has-text-primary">
           <div className="card-content">{slug}</div>
         </Link>
       </div>

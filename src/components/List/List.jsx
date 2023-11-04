@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { api } from "../../hooks/fetch";
-import "./List.css";
 import { Layout } from "../Layout/Layout";
 import { Card } from "../Card/Card";
+import { api } from "../../hooks/fetch";
+import "./List.css";
 
 const List = () => {
   const [list, setList] = useState([]);
@@ -46,7 +46,8 @@ const List = () => {
           </div>
         ) : (
           <div className="has-text-centered mt-5">
-            <h2>No se ha encontrado el usuario</h2>
+            <h2 className="title is-2">No se ha encontrado el usuario :(</h2>
+            <p className="subtitle is-5">Por favor, inténtelo nuevamente.</p>
           </div>
         )}
       </div>
