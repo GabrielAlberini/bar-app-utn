@@ -18,6 +18,7 @@ const api = {
       );
       const data = await response.text();
       const parsedData = await parseCSVData(data);
+      console.log(parsedData);
       return parsedData;
     },
   },
