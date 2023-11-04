@@ -20,7 +20,6 @@ const api = {
 
   links: {
     fetch: async (url) => {
-      console.log(url);
       const response = await fetch(url);
       const data = await response.text();
       const parsedData = await new Promise((resolve, reject) => {
